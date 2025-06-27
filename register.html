@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Eatnary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #e6f0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .register-container {
+            background-color: #003366;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #e6f0ff;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .register-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #3399ff;
+        }
+
+        .login-link {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .login-link a {
+            color: #e6f0ff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .login-link a:hover {
+            color: #3399ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Daftar</h1>
+        
+        <form action="login.html">
+            <div class="form-group">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Re-Password" required>
+            </div>
+            
+            <button type="submit" class="register-button">Daftar</button>
+            
+            <div class="login-link">
+                <a href="login.html">Sudah punya akun? Login</a>
+            </div>
+
+            <button type="submit" class="register-button" onclick="window.location.href='login.html'">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>

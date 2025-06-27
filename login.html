@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Eatnary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #e6f0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            background-color: #003366;
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #e6f0ff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #e6f0ff;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .links {
+            text-align: left;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .links div {
+            margin-bottom: 8px;
+        }
+
+        .links a {
+            color: #e6f0ff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #3399ff;
+        }
+
+        .login-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #3399ff;
+        }
+
+        .social-login {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-login p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #e6f0ff;
+        }
+
+        .social-links a {
+            color: #e6f0ff;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            margin: 8px 0;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #3399ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>SELAMAT DATANG DI EATNARY!</h1>
+        <p class="subtitle">Silahkan Masukkan Username/email dan Password Eatnary Anda:</p>
+        
+        <form action="home.html">
+            <div class="form-group">
+                <input type="text" placeholder="Username/Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            
+            <div class="links">
+                <div><a href="register.html">Belum punya akun? Daftar</a></div>
+                <div><a href="admin_login.html">Admin Kantin?</a></div>
+            </div>
+
+            <button type="submit" class="login-button" onclick="window.location.href='home.html'">Login</button>
+            
+            <div class="social-login">
+                <p>Login dengan</p>
+                <div class="social-links">
+                    <a href="#">Log in dengan Google?</a>
+                    <a href="#">Log in dengan facebook?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
